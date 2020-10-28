@@ -36,28 +36,58 @@
     transform: rotate(360deg);
   }
 }
-div {overflow: hidden;}
 .listContainer {
   width: 100%;
   height: 100%;
+  display: grid;
 }
 
 .listL, .listR {
   display: block;
-  width: 50%;
-  
+  width: 45%;
+  padding-left: 10px;
+  padding-right: 10px;
+
 }
 .listL{
   float: left;
 }
-.listR {
+.listR {  
   float: right;
+
 }
 .sortTitle {
   padding-top: 10%;
+  display: block;
+}
+
+.searchBox {
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  display: block;}
+
+.buttons, .topButtons {
+  width: 100%;
+  text-align: center;
+  display: block;
+}
+.topButton {
+  min-width:30%;
   text-align: center;
 }
-.searchBox {
-  align-self: center;
-  height: 25px;
+.button {
+  min-width:50%;
+  text-align: center;
+}
+button.button {
+  border: 1px solid #0d0d0d;
+  background-color: transparent;
+  font-family: inherit;
+  padding: 5;
+  margin: 5;
+  cursor: pointer;
+}
+* {
+  box-sizing: border-box;
 }
